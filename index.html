@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear - Gradient</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prueba tu Linear-Gradient</h1>
+        <h2>Puedes probar valores para generar el mejor rgb para tu linear-gradient!</h2>
+        <div class="fondo">
+
+        </div>
+        <form>
+            <label for="valor">Ingresa los valores: </label>
+            <input onkeyup="mostrar(this, value)" id="valor" type="text" value="linear-gradient(45deg, red, blue)"
+                size="28">
+                linear-gradient&#10098;<input size="3" onkeyup="valores(this, value)" type="text" value="✓" id="deg">deg,
+                <input size="8" onkeyup="valores(this, value)" type="text" value="yellow" id="primero">,
+                <input size="8" onkeyup="valores(this, value)" type="text" value="darkgreen" id="segundo">&#10099;
+                <button onclick="copyText()">copiar</button>
+        </form> 
+    </div>
+</body>
+
+</html>
